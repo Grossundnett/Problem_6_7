@@ -1,0 +1,17 @@
+ADC Handler Structure:-
+
+Function of each member of C struct ADC_HandleTypeDef:- 
+*Instance : It is a pointer to the ADC_TypeDef C struct which is a descriptor for the ADC module we want to use such as ADC1, ADC2 and ADC3.
+Init : It is an instance of the C struct ADC_InitTypeDef which is used to select ADC features such as clock prescaler selection, resolution selection, scan mode, data alignment, interrupt/polling method, number of conversion, etc. 
+NbrOfCurrentConversionRank :  ADC number of current conversion rank
+*DMA_Handle : Pointer to a DMA handler. 
+
+
+Configuring ADC Clock:-
+
+The clock for ADC peripheral circuits is common to all ADCs (ADCCLK). Clock for ADC modules is generated from APB2 bus and it can be further divided by programmable Prescaler value of Fpclk/2, 4, 6,8. ClockPrescaler is used to select the ADC Clock Prescaler.
+
+
+Setting ADC Resolution:-
+
+Resolution member of ADC_InitTypeDef C struct selects the ADC resolution such as 6-bit, 8-bit, 10-bit, and 12-bit. The higher is the resolution, the lower will be the conversion speed and vice versa.
