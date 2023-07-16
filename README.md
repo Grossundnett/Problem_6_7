@@ -14,3 +14,19 @@ ADC Channel Configuration - We can select multiple channels for ADC conversion. 
 Start ADC Conversion - Start the ADC conversion by triggering it manually or using a timer or other triggering mechanisms, here we have used a Systick Clock which needs to be configured separately. 
 
 Reading and Processing ADC Values - After the conversion is complete, we can read the converted values from the ADC data register. The STM32F4 ADC can store the converted values in either a single data register or a regular sequence of data registers.
+
+
+
+For programming ADC and showing interfacing of analog sensors for given specifications follows all the instructions followed in the first problem including some extra steps:-
+
+Connect the Analog Sensor: Connect the output of the analog sensor to one of the available ADC input pins on the STM32F407VGTx board.   
+
+Configure ADC Pins: Set the GPIO pins corresponding to the ADC input pins as analog inputs.
+
+Initialize ADC: Initialize the ADC module by setting its parameters, such as clock prescaler, resolution, and conversion mode.
+
+Source Clock Configuration
+
+ADC Conversion and Reading Values
+
+The output can be observed from the watch dialog box where the variable(myAdcValue) whose value has been stored in one of the registers.
